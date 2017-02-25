@@ -1,0 +1,368 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Accept	mySocket.cpp	/^int Accept(int fd, struct sockaddr *sa, socklen_t *salen)$/;"	f	signature:(int fd, struct sockaddr *sa, socklen_t *salen)
+Accept	mySocket.h	/^int Accept(int fd, struct sockaddr *sa, socklen_t *salen);$/;"	p	signature:(int fd, struct sockaddr *sa, socklen_t *salen)
+Bind	mySocket.cpp	/^void Bind(int fd, const struct sockaddr *sa, socklen_t salen)$/;"	f	signature:(int fd, const struct sockaddr *sa, socklen_t salen)
+Bind	mySocket.h	/^void Bind(int fd, const struct sockaddr *sa, socklen_t salen);$/;"	p	signature:(int fd, const struct sockaddr *sa, socklen_t salen)
+Close	mySocket.cpp	/^void Close(int fd)$/;"	f	signature:(int fd)
+Close	mySocket.h	/^void Close(int fd);$/;"	p	signature:(int fd)
+Connect	mySocket.cpp	/^void Connect(int fd, const struct sockaddr *sa, socklen_t salen)$/;"	f	signature:(int fd, const struct sockaddr *sa, socklen_t salen)
+Connect	mySocket.h	/^void Connect(int fd, const struct sockaddr *sa, socklen_t salen); $/;"	p	signature:(int fd, const struct sockaddr *sa, socklen_t salen)
+Listen	mySocket.cpp	/^void Listen(int fd, int backlog)$/;"	f	signature:(int fd, int backlog)
+Listen	mySocket.h	/^void Listen(int fd, int backlog);$/;"	p	signature:(int fd, int backlog)
+Setsockopt	mySocket.cpp	/^void Setsockopt(int fd, int level, int optname, const void *optval, socklen_t optlen)$/;"	f	signature:(int fd, int level, int optname, const void *optval, socklen_t optlen)
+Setsockopt	mySocket.h	/^void Setsockopt(int fd, int level, int optname, const void *optval, socklen_t optlen);$/;"	p	signature:(int fd, int level, int optname, const void *optval, socklen_t optlen)
+Socket	mySocket.cpp	/^int Socket(int family, int type, int protocol)$/;"	f	signature:(int family, int type, int protocol)
+Socket	mySocket.h	/^int Socket(int family, int type, int protocol);$/;"	p	signature:(int family, int type, int protocol)
+_MYCONNECTION_H_	myConnection.h	2;"	d
+_MYSOCKET_H_	mySocket.h	2;"	d
+_MYTEXTCHAT_H_	myTextChat.h	2;"	d
+a	myTextChat.h	/^    struct tm a;$/;"	m	class:myTextChat	typeref:struct:myTextChat::tm	access:private
+ac	myTextChat.cpp	/^        long ac;$/;"	l
+ac2	myTextChat.cpp	/^    long ac2;$/;"	l
+account	myTextChat.cpp	/^    long account;$/;"	l
+account	myTextChat.cpp	/^    ss >> account;$/;"	l
+accountBase	main.cpp	/^long accountBase;$/;"	v
+accountIncre	main.cpp	/^long accountIncre;$/;"	v
+accountIncre	myTextChat.cpp	/^    ss << accountBase + accountIncre;\/\/account is accountBase+accountIncre$/;"	l
+accountList	main.cpp	/^list<pair<char*, bool> > accountList;\/\/password, bool(accountBase+index+1 is account)$/;"	v
+accountList2	main.cpp	/^list<long> accountList2;$/;"	v
+accountMutex	main.cpp	/^pthread_mutex_t accountMutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+accountSave	myTextChat.h	/^    std::string accountSave;$/;"	m	class:myTextChat	access:private
+accountSaveNum	myTextChat.cpp	/^    ss >> accountSave >> pa >> accountSaveNum;$/;"	l
+accountSaveNum	myTextChat.h	/^    long accountSaveNum;$/;"	m	class:myTextChat	access:private
+addfr	myTextChat.cpp	/^void myTextChat::addfr()$/;"	f	class:myTextChat	signature:()
+addfr	myTextChat.h	/^    void addfr();$/;"	p	class:myTextChat	access:public	signature:()
+addr4	myConnection.cpp	/^        struct sockaddr_in *addr4 = (struct sockaddr_in *)&ss;$/;"	l
+addr6	myConnection.cpp	/^        struct sockaddr_in6 *addr6 = (struct sockaddr_in6 *)&ss;$/;"	l
+agrfr	myTextChat.cpp	/^void myTextChat::agrfr()$/;"	f	class:myTextChat	signature:()
+agrfr	myTextChat.h	/^    void agrfr();$/;"	p	class:myTextChat	access:public	signature:()
+base	myTextChat.h	/^        base = 100000000,$/;"	e	enum:myTextChat::__anon1
+beg	myTextChat.cpp	/^        in.seekg(n*(sizeof(long)+passwordNum+1), ios::beg);$/;"	m	class:ios	file:
+close	myConnection.h	/^    void close(){ if(fd != -1) Close(fd), fd = -1;}$/;"	f	class:tcpConnect	access:public	signature:()
+close	myConnection.h	/^    void close(){ if(fd != -1) Close(fd), fd = -1;}$/;"	f	class:tcpConnection	access:public	signature:()
+close	myTextChat.cpp	/^            fin.close();$/;"	p	file:	signature:()
+conn	main.cpp	/^        tcpConnection conn = listenConn.myAccept();$/;"	l
+conn	myTextChat.h	/^    tcpConnection conn;$/;"	m	class:myTextChat	access:private
+connection	myTextChat.h	/^    MYSQL *connection;$/;"	m	class:myTextChat	access:private
+count	myTextChat.cpp	/^        int count = 0;$/;"	l
+da	myTextChat.cpp	/^    char da[25];$/;"	l
+data	myTextChat.cpp	/^void myTextChat::data()$/;"	f	class:myTextChat	signature:()
+data	myTextChat.h	/^    void data();$/;"	p	class:myTextChat	access:public	signature:()
+dataMutex	main.cpp	/^pthread_mutex_t dataMutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+endl	myConnection.cpp	/^        cout << "client can not accept" << endl;$/;"	l
+endl	myConnection.cpp	/^        cout << "tcp connect error for " << host << " " << service << endl;$/;"	l
+endl	myConnection.cpp	/^        cout << "tcp listen error for " << host << " " << service << endl;$/;"	l
+endl	mySocket.cpp	/^        std::cout << "accept error" << std::endl;$/;"	m	class:std	file:
+endl	mySocket.cpp	/^        std::cout << "bind error" << std::endl;$/;"	m	class:std	file:
+endl	mySocket.cpp	/^        std::cout << "close error" << std::endl;$/;"	m	class:std	file:
+endl	mySocket.cpp	/^        std::cout << "connect error" << std::endl;$/;"	m	class:std	file:
+endl	mySocket.cpp	/^        std::cout << "listen error" << std::endl;$/;"	m	class:std	file:
+endl	mySocket.cpp	/^        std::cout << "setsockopt error" << std::endl;$/;"	m	class:std	file:
+endl	mySocket.cpp	/^        std::cout << "socket error" << std::endl;$/;"	m	class:std	file:
+endl	myTextChat.cpp	/^                cout << "select error" << endl;$/;"	l
+exist	myTextChat.cpp	/^void myTextChat::exist()$/;"	f	class:myTextChat	signature:()
+exist	myTextChat.h	/^    void exist();$/;"	p	class:myTextChat	access:public	signature:()
+fd	myConnection.h	/^    int fd;$/;"	m	class:tcpConnect	access:private
+fd	myConnection.h	/^    int fd;$/;"	m	class:tcpConnection	access:private
+fd	myConnection.h	/^    void close(){ if(fd != -1) Close(fd), fd = -1;}$/;"	l
+fin	myTextChat.cpp	/^            fin.read((char*)&accountBase, sizeof(accountBase));$/;"	p	file:	signature:(char*)&accountBase, sizeof(accountBase)
+first	myPair.h	/^    char* first;$/;"	m	struct:std::pair	access:public
+first_type	myPair.h	/^    typedef char* first_type;$/;"	t	struct:std::pair	access:public
+front	myTextChat.cpp	/^        ss << accountList2.front();$/;"	p	file:	signature:()
+getFd	myConnection.cpp	/^int tcpConnect::getFd() const$/;"	f	class:tcpConnect	signature:() const
+getFd	myConnection.h	/^    int getFd() const {return fd;}$/;"	f	class:tcpConnection	access:public	signature:() const
+getFd	myConnection.h	/^    int getFd() const;$/;"	p	class:tcpConnect	access:public	signature:() const
+getLocal	myConnection.cpp	/^void tcpConnection::getLocal(string &host, string &service) const$/;"	f	class:tcpConnection	signature:(string &host, string &service) const
+getLocal	myConnection.h	/^    void getLocal(std::string &host, std::string &service) const;$/;"	p	class:tcpConnection	access:public	signature:(std::string &host, std::string &service) const
+getLocalTime	myTextChat.cpp	/^const string myTextChat::getLocalTime()$/;"	f	class:myTextChat	signature:()
+getLocalTime	myTextChat.h	/^    const std::string getLocalTime();$/;"	p	class:myTextChat	access:private	signature:()
+getOther	myConnection.cpp	/^void tcpConnection::getOther(string &host, string &service) const$/;"	f	class:tcpConnection	signature:(string &host, string &service) const
+getOther	myConnection.h	/^    void getOther(std::string &host, std::string &service) const;$/;"	p	class:tcpConnection	access:public	signature:(std::string &host, std::string &service) const
+hints	myConnection.cpp	/^    struct addrinfo hints, *res, *ressave;$/;"	l
+histy	myTextChat.cpp	/^void myTextChat::histy()$/;"	f	class:myTextChat	signature:()
+histy	myTextChat.h	/^    void histy();$/;"	p	class:myTextChat	access:public	signature:()
+host	myConnection.h	/^    std::string host;$/;"	m	class:tcpConnect	access:private
+i	myTextChat.cpp	/^    int i = accountSaveNum - accountBase;$/;"	l
+i	myTextChat.cpp	/^    int i;$/;"	l
+in	myTextChat.cpp	/^    ifstream in(fileName.c_str());$/;"	p	file:	signature:(fileName.c_str())
+ind	myTextChat.cpp	/^    in >> ind;$/;"	l
+ind	myTextChat.cpp	/^    long ind;$/;"	l
+index	myTextChat.cpp	/^    my_ulonglong index = ind;$/;"	l
+inum	myConnection.h	/^    char inum[5];$/;"	m	class:tcpConnection	access:private
+ios::beg	myTextChat.cpp	/^        in.seekg(n*(sizeof(long)+passwordNum+1), ios::beg);$/;"	m	class:ios	file:
+it	myTextChat.cpp	/^        list<pair<char*, bool> >::const_iterator it;$/;"	l
+it	myTextChat.cpp	/^    list<pair<char*, bool> >::iterator it;$/;"	l
+len	myConnection.cpp	/^    socklen_t len;$/;"	l
+listenfd	myConnection.cpp	/^    int listenfd, n;$/;"	l
+login	myTextChat.cpp	/^void myTextChat::login()$/;"	f	class:myTextChat	signature:()
+login	myTextChat.h	/^    void login();$/;"	p	class:myTextChat	access:public	signature:()
+luckyNum	myTextChat.cpp	/^void myTextChat::luckyNum()$/;"	f	class:myTextChat	signature:()
+luckyNum	myTextChat.h	/^    void luckyNum();$/;"	p	class:myTextChat	access:private	signature:()
+main	main.cpp	/^int main()$/;"	f	signature:()
+mess	myTextChat.h	/^    std::string mess;$/;"	m	class:myTextChat	access:private
+messCmd	myTextChat.h	/^    std::string messCmd;$/;"	m	class:myTextChat	access:private
+myAccept	myConnection.cpp	/^tcpConnection tcpConnect::myAccept() const$/;"	f	class:tcpConnect	signature:() const
+myAccept	myConnection.h	/^    tcpConnection myAccept() const;\/\/返回fd$/;"	p	class:tcpConnect	access:public	signature:() const
+myConnect	myConnection.cpp	/^void tcpConnect::myConnect()$/;"	f	class:tcpConnect	signature:()
+myConnect	myConnection.h	/^    void myConnect();$/;"	p	class:tcpConnect	access:private	signature:()
+myListen	myConnection.cpp	/^void tcpConnect::myListen()$/;"	f	class:tcpConnect	signature:()
+myListen	myConnection.h	/^    void myListen();$/;"	p	class:tcpConnect	access:private	signature:()
+myRecv	myConnection.cpp	/^int tcpConnection::myRecv(char *buff, size_t nbytes) const$/;"	f	class:tcpConnection	signature:(char *buff, size_t nbytes) const
+myRecv	myConnection.h	/^    int myRecv(char *buff, size_t nbytes) const;$/;"	p	class:tcpConnection	access:public	signature:(char *buff, size_t nbytes) const
+myRecvCmd	myConnection.cpp	/^int tcpConnection::myRecvCmd(char *buff, size_t nbytes) const$/;"	f	class:tcpConnection	signature:(char *buff, size_t nbytes) const
+myRecvCmd	myConnection.h	/^    int myRecvCmd(char *buff, size_t nbytes) const;$/;"	p	class:tcpConnection	access:public	signature:(char *buff, size_t nbytes) const
+mySend	myConnection.cpp	/^int tcpConnection::mySend(const char *buff, size_t nbytes) const$/;"	f	class:tcpConnection	signature:(const char *buff, size_t nbytes) const
+mySend	myConnection.h	/^    int mySend(const char *buff, size_t nbytes) const;$/;"	p	class:tcpConnection	access:public	signature:(const char *buff, size_t nbytes) const
+mySend	myTextChat.cpp	/^                conn.mySend(mess.c_str(), mess.length() + 1);$/;"	p	file:	signature:(mess.c_str(), mess.length() + 1)
+mySend	myTextChat.cpp	/^        conn.mySend(mess.c_str(), mess.length() + 1);$/;"	p	file:	signature:(mess.c_str(), mess.length() + 1)
+mySend	myTextChat.cpp	/^    conn.mySend(mess.c_str(), mess.length() + 1);$/;"	p	file:	signature:(mess.c_str(), mess.length() + 1)
+mySendCmd	myConnection.cpp	/^int tcpConnection::mySendCmd(const char *buff, size_t nbytes) const$/;"	f	class:tcpConnection	signature:(const char *buff, size_t nbytes) const
+mySendCmd	myConnection.h	/^    int mySendCmd(const char *buff, size_t nbytes) const;$/;"	p	class:tcpConnection	access:public	signature:(const char *buff, size_t nbytes) const
+mySendCmd	myTextChat.cpp	/^            conn.mySendCmd(messCmd.c_str(), messCmd.length() + 1);$/;"	p	file:	signature:(messCmd.c_str(), messCmd.length() + 1)
+mySendCmd	myTextChat.cpp	/^        conn.mySendCmd(messCmd.c_str(), messCmd.length() + 1);$/;"	p	file:	signature:(messCmd.c_str(), messCmd.length() + 1)
+mySendCmd	myTextChat.cpp	/^    conn.mySendCmd(messCmd.c_str(), messCmd.length() + 1);$/;"	p	file:	signature:(messCmd.c_str(), messCmd.length() + 1)
+myTextChat	myTextChat.cpp	/^myTextChat::myTextChat(const tcpConnection &c) : conn(c) $/;"	f	class:myTextChat	signature:(const tcpConnection &c)
+myTextChat	myTextChat.h	/^    myTextChat(const tcpConnection &c);$/;"	p	class:myTextChat	access:public	signature:(const tcpConnection &c)
+myTextChat	myTextChat.h	/^class myTextChat$/;"	c
+myTextChat::a	myTextChat.h	/^    struct tm a;$/;"	m	class:myTextChat	typeref:struct:myTextChat::tm	access:private
+myTextChat::accountSave	myTextChat.h	/^    std::string accountSave;$/;"	m	class:myTextChat	access:private
+myTextChat::accountSaveNum	myTextChat.h	/^    long accountSaveNum;$/;"	m	class:myTextChat	access:private
+myTextChat::addfr	myTextChat.cpp	/^void myTextChat::addfr()$/;"	f	class:myTextChat	signature:()
+myTextChat::addfr	myTextChat.h	/^    void addfr();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::agrfr	myTextChat.cpp	/^void myTextChat::agrfr()$/;"	f	class:myTextChat	signature:()
+myTextChat::agrfr	myTextChat.h	/^    void agrfr();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::base	myTextChat.h	/^        base = 100000000,$/;"	e	enum:myTextChat::__anon1
+myTextChat::conn	myTextChat.h	/^    tcpConnection conn;$/;"	m	class:myTextChat	access:private
+myTextChat::connection	myTextChat.h	/^    MYSQL *connection;$/;"	m	class:myTextChat	access:private
+myTextChat::data	myTextChat.cpp	/^void myTextChat::data()$/;"	f	class:myTextChat	signature:()
+myTextChat::data	myTextChat.h	/^    void data();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::exist	myTextChat.cpp	/^void myTextChat::exist()$/;"	f	class:myTextChat	signature:()
+myTextChat::exist	myTextChat.h	/^    void exist();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::getLocalTime	myTextChat.cpp	/^const string myTextChat::getLocalTime()$/;"	f	class:myTextChat	signature:()
+myTextChat::getLocalTime	myTextChat.h	/^    const std::string getLocalTime();$/;"	p	class:myTextChat	access:private	signature:()
+myTextChat::histy	myTextChat.cpp	/^void myTextChat::histy()$/;"	f	class:myTextChat	signature:()
+myTextChat::histy	myTextChat.h	/^    void histy();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::login	myTextChat.cpp	/^void myTextChat::login()$/;"	f	class:myTextChat	signature:()
+myTextChat::login	myTextChat.h	/^    void login();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::luckyNum	myTextChat.cpp	/^void myTextChat::luckyNum()$/;"	f	class:myTextChat	signature:()
+myTextChat::luckyNum	myTextChat.h	/^    void luckyNum();$/;"	p	class:myTextChat	access:private	signature:()
+myTextChat::mess	myTextChat.h	/^    std::string mess;$/;"	m	class:myTextChat	access:private
+myTextChat::messCmd	myTextChat.h	/^    std::string messCmd;$/;"	m	class:myTextChat	access:private
+myTextChat::myTextChat	myTextChat.cpp	/^myTextChat::myTextChat(const tcpConnection &c) : conn(c) $/;"	f	class:myTextChat	signature:(const tcpConnection &c)
+myTextChat::myTextChat	myTextChat.h	/^    myTextChat(const tcpConnection &c);$/;"	p	class:myTextChat	access:public	signature:(const tcpConnection &c)
+myTextChat::nagrf	myTextChat.cpp	/^void myTextChat::nagrf()$/;"	f	class:myTextChat	signature:()
+myTextChat::nagrf	myTextChat.h	/^    void nagrf();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::neold	myTextChat.cpp	/^void myTextChat::neold(bool rve)$/;"	f	class:myTextChat	signature:(bool rve)
+myTextChat::neold	myTextChat.h	/^    void neold(bool);$/;"	p	class:myTextChat	access:public	signature:(bool)
+myTextChat::newme	myTextChat.cpp	/^void myTextChat::newme()\/\/dai ce shi$/;"	f	class:myTextChat	signature:()
+myTextChat::newme	myTextChat.h	/^    void newme();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::nresf	myTextChat.cpp	/^void myTextChat::nresf()$/;"	f	class:myTextChat	signature:()
+myTextChat::nresf	myTextChat.h	/^    void nresf();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::o2om	myTextChat.cpp	/^void myTextChat::o2om()$/;"	f	class:myTextChat	signature:()
+myTextChat::o2om	myTextChat.h	/^    void o2om();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::o2omq	myTextChat.cpp	/^void myTextChat::o2omq()$/;"	f	class:myTextChat	signature:()
+myTextChat::o2omq	myTextChat.h	/^    void o2omq();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::otherAccount	myTextChat.h	/^    std::string otherAccount;$/;"	m	class:myTextChat	access:private
+myTextChat::passw	myTextChat.cpp	/^void myTextChat::passw()$/;"	f	class:myTextChat	signature:()
+myTextChat::passw	myTextChat.h	/^    void passw();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::passwordNum	myTextChat.h	/^        passwordNum = 20,\/\/password size$/;"	e	enum:myTextChat::__anon1
+myTextChat::reold	myTextChat.cpp	/^void myTextChat::reold(bool rve)$/;"	f	class:myTextChat	signature:(bool rve)
+myTextChat::reold	myTextChat.h	/^    void reold(bool);$/;"	p	class:myTextChat	access:public	signature:(bool)
+myTextChat::res	myTextChat.h	/^    char res[resNum];$/;"	m	class:myTextChat	access:private
+myTextChat::resCmd	myTextChat.h	/^    char resCmd[resCmdNum];$/;"	m	class:myTextChat	access:private
+myTextChat::resCmdNum	myTextChat.h	/^        resCmdNum = 100,\/\/cmd size is 99$/;"	e	enum:myTextChat::__anon1
+myTextChat::resNum	myTextChat.h	/^        resNum = 7000\/\/long respond size is 6999$/;"	e	enum:myTextChat::__anon1
+myTextChat::resfr	myTextChat.cpp	/^void myTextChat::resfr()$/;"	f	class:myTextChat	signature:()
+myTextChat::resfr	myTextChat.h	/^    void resfr();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::result	myTextChat.h	/^    MYSQL_RES *result;$/;"	m	class:myTextChat	access:private
+myTextChat::row	myTextChat.h	/^    MYSQL_ROW row;$/;"	m	class:myTextChat	access:private
+myTextChat::sendm	myTextChat.cpp	/^void myTextChat::sendm()$/;"	f	class:myTextChat	signature:()
+myTextChat::sendm	myTextChat.h	/^    void sendm();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::user	myTextChat.cpp	/^void myTextChat::user()$/;"	f	class:myTextChat	signature:()
+myTextChat::user	myTextChat.h	/^    void user();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::work	myTextChat.cpp	/^void myTextChat::work()$/;"	f	class:myTextChat	signature:()
+myTextChat::work	myTextChat.h	/^    void work();$/;"	p	class:myTextChat	access:public	signature:()
+myTextChat::~myTextChat	myTextChat.cpp	/^myTextChat::~myTextChat()$/;"	f	class:myTextChat	signature:()
+myTextChat::~myTextChat	myTextChat.h	/^    ~myTextChat();$/;"	p	class:myTextChat	access:public	signature:()
+mysql_error	myTextChat.cpp	/^        cout << "Error: " << mysql_error(connection);$/;"	p	file:	signature:(connection)
+n	myConnection.cpp	/^    int listenfd, n;$/;"	l
+n	myConnection.cpp	/^    int sockfd, n;$/;"	l
+n	mySocket.cpp	/^    int n = accept(fd, sa, salen);$/;"	l
+n	mySocket.cpp	/^    int n;$/;"	l
+n	myTextChat.cpp	/^        long n = account - accountBase;$/;"	l
+n	myTextChat.cpp	/^        long n = account - base - 1;$/;"	l
+n	myTextChat.cpp	/^        long n = accountSaveNum - accountBase;$/;"	l
+n	myTextChat.cpp	/^        long n = accountSaveNum - base - 1;$/;"	l
+nagrf	myTextChat.cpp	/^void myTextChat::nagrf()$/;"	f	class:myTextChat	signature:()
+nagrf	myTextChat.h	/^    void nagrf();$/;"	p	class:myTextChat	access:public	signature:()
+neold	myTextChat.cpp	/^void myTextChat::neold(bool rve)$/;"	f	class:myTextChat	signature:(bool rve)
+neold	myTextChat.h	/^    void neold(bool);$/;"	p	class:myTextChat	access:public	signature:(bool)
+newme	myTextChat.cpp	/^void myTextChat::newme()\/\/dai ce shi$/;"	f	class:myTextChat	signature:()
+newme	myTextChat.h	/^    void newme();$/;"	p	class:myTextChat	access:public	signature:()
+nresf	myTextChat.cpp	/^void myTextChat::nresf()$/;"	f	class:myTextChat	signature:()
+nresf	myTextChat.h	/^    void nresf();$/;"	p	class:myTextChat	access:public	signature:()
+o2om	myTextChat.cpp	/^void myTextChat::o2om()$/;"	f	class:myTextChat	signature:()
+o2om	myTextChat.h	/^    void o2om();$/;"	p	class:myTextChat	access:public	signature:()
+o2omq	myTextChat.cpp	/^void myTextChat::o2omq()$/;"	f	class:myTextChat	signature:()
+o2omq	myTextChat.h	/^    void o2omq();$/;"	p	class:myTextChat	access:public	signature:()
+objects	Makefile	/^objects = main.o myConnection.o mySocket.o myTextChat.o myLib.o$/;"	m
+on	myConnection.cpp	/^    const int on = 1;$/;"	l
+open	myTextChat.cpp	/^        in.open(fileName.c_str());$/;"	p	file:	signature:(fileName.c_str())
+operator =	myPair.h	/^    pair<char*, bool>& operator =(const pair<char*, bool> &p)$/;"	f	struct:std::pair	access:public	signature:(const pair<char*, bool> &p)
+otherAccount	myTextChat.cpp	/^    char otherAccount[15];$/;"	l
+otherAccount	myTextChat.h	/^    std::string otherAccount;$/;"	m	class:myTextChat	access:private
+out	myTextChat.cpp	/^            out.write((char*)&ac, sizeof(ac));\/\/account$/;"	p	file:	signature:(char*)&ac, sizeof(ac)
+out	myTextChat.cpp	/^        ofstream out(fileName.c_str());$/;"	p	file:	signature:(fileName.c_str())
+out2	myTextChat.cpp	/^            out2.write((char*)&accountBase, sizeof(accountBase));$/;"	p	file:	signature:(char*)&accountBase, sizeof(accountBase)
+pa	myTextChat.cpp	/^    string pa;$/;"	l
+pa2	myTextChat.cpp	/^    char pa2[passwordNum+1];$/;"	l
+pair	myPair.h	/^    pair() : first(0), second(0) {}$/;"	f	struct:std::pair	access:public	signature:()
+pair	myPair.h	/^    pair(const char *c, bool b = false) : second(b)$/;"	f	struct:std::pair	access:public	signature:(const char *c, bool b = false)
+pair	myPair.h	/^    pair(const pair<char*, bool> &p) : second(p.second)$/;"	f	struct:std::pair	access:public	signature:(const pair<char*, bool> &p)
+pair	myPair.h	/^struct pair<char*, bool>$/;"	s	namespace:std
+pair	myTextChat.cpp	/^    accountList.push_back(pair<char*, bool>());$/;"	p	file:	signature:()
+passive	myConnection.h	/^    bool passive;$/;"	m	class:tcpConnect	access:private
+passw	myTextChat.cpp	/^void myTextChat::passw()$/;"	f	class:myTextChat	signature:()
+passw	myTextChat.h	/^    void passw();$/;"	p	class:myTextChat	access:public	signature:()
+passwordNum	myTextChat.h	/^        passwordNum = 20,\/\/password size$/;"	e	enum:myTextChat::__anon1
+pop_front	myTextChat.cpp	/^        accountList2.pop_front();$/;"	p	file:	signature:()
+ps	myTextChat.cpp	/^        char ps[passwordNum+1];$/;"	l
+read	myTextChat.cpp	/^        in.read(pa2, sizeof(pa2));$/;"	p	file:	signature:(pa2, sizeof(pa2))
+reold	myTextChat.cpp	/^void myTextChat::reold(bool rve)$/;"	f	class:myTextChat	signature:(bool rve)
+reold	myTextChat.h	/^    void reold(bool);$/;"	p	class:myTextChat	access:public	signature:(bool)
+res	myConnection.cpp	/^    struct addrinfo hints, *res, *ressave;$/;"	l
+res	myTextChat.h	/^    char res[resNum];$/;"	m	class:myTextChat	access:private
+resCmd	myTextChat.cpp	/^    ss << &resCmd[6] << " " << &resCmd[6];$/;"	l
+resCmd	myTextChat.cpp	/^    ss << &resCmd[6];$/;"	l
+resCmd	myTextChat.h	/^    char resCmd[resCmdNum];$/;"	m	class:myTextChat	access:private
+resCmdNum	myTextChat.h	/^        resCmdNum = 100,\/\/cmd size is 99$/;"	e	enum:myTextChat::__anon1
+resNum	myTextChat.h	/^        resNum = 7000\/\/long respond size is 6999$/;"	e	enum:myTextChat::__anon1
+resfr	myTextChat.cpp	/^void myTextChat::resfr()$/;"	f	class:myTextChat	signature:()
+resfr	myTextChat.h	/^    void resfr();$/;"	p	class:myTextChat	access:public	signature:()
+ressave	myConnection.cpp	/^    struct addrinfo hints, *res, *ressave;$/;"	l
+result	myTextChat.h	/^    MYSQL_RES *result;$/;"	m	class:myTextChat	access:private
+reva	myTextChat.cpp	/^    int reva;$/;"	l
+row	myTextChat.h	/^    MYSQL_ROW row;$/;"	m	class:myTextChat	access:private
+rowNum	myTextChat.cpp	/^    my_ulonglong rowNum = mysql_num_rows(result);$/;"	l
+rset	myTextChat.cpp	/^    fd_set rset;$/;"	l
+rve	myTextChat.cpp	/^    bool rve = false;$/;"	l
+s	myTextChat.cpp	/^        out << s;$/;"	l
+s	myTextChat.cpp	/^    string s;$/;"	l
+second	myPair.h	/^    bool second;$/;"	m	struct:std::pair	access:public
+second_type	myPair.h	/^    typedef bool second_type;$/;"	t	struct:std::pair	access:public
+sendm	myTextChat.cpp	/^void myTextChat::sendm()$/;"	f	class:myTextChat	signature:()
+sendm	myTextChat.h	/^    void sendm();$/;"	p	class:myTextChat	access:public	signature:()
+ser	myConnection.cpp	/^        struct servent *ser;$/;"	l
+service	myConnection.h	/^    std::string service;$/;"	m	class:tcpConnect	access:private
+setFd	myConnection.h	/^    void setFd(int f) {fd = f;}$/;"	f	class:tcpConnection	access:public	signature:(int f)
+setFirst	myPair.h	/^    void setFirst(const char *c)$/;"	f	struct:std::pair	access:public	signature:(const char *c)
+setSecond	myPair.h	/^    void setSecond(bool b)$/;"	f	struct:std::pair	access:public	signature:(bool b)
+setSecond	myTextChat.cpp	/^    it->setSecond(true);$/;"	p	file:	signature:(true)
+sockfd	myConnection.cpp	/^    int sockfd, n;$/;"	l
+sqlText	myTextChat.cpp	/^    string sqlText = "insert into record";$/;"	l
+sqlText	myTextChat.cpp	/^    string sqlText = "select time, text from record";$/;"	l
+ss	myConnection.cpp	/^    struct sockaddr_storage ss;$/;"	l
+ss	myTextChat.cpp	/^        ostringstream ss;$/;"	l
+ss	myTextChat.cpp	/^    ostringstream ss;$/;"	l
+ss	myTextChat.cpp	/^    stringstream ss;$/;"	l
+std	myPair.h	/^namespace std{$/;"	n
+std::endl	mySocket.cpp	/^        std::cout << "accept error" << std::endl;$/;"	m	class:std	file:
+std::endl	mySocket.cpp	/^        std::cout << "bind error" << std::endl;$/;"	m	class:std	file:
+std::endl	mySocket.cpp	/^        std::cout << "close error" << std::endl;$/;"	m	class:std	file:
+std::endl	mySocket.cpp	/^        std::cout << "connect error" << std::endl;$/;"	m	class:std	file:
+std::endl	mySocket.cpp	/^        std::cout << "listen error" << std::endl;$/;"	m	class:std	file:
+std::endl	mySocket.cpp	/^        std::cout << "setsockopt error" << std::endl;$/;"	m	class:std	file:
+std::endl	mySocket.cpp	/^        std::cout << "socket error" << std::endl;$/;"	m	class:std	file:
+std::pair	myPair.h	/^struct pair<char*, bool>$/;"	s	namespace:std
+std::pair::first	myPair.h	/^    char* first;$/;"	m	struct:std::pair	access:public
+std::pair::first_type	myPair.h	/^    typedef char* first_type;$/;"	t	struct:std::pair	access:public
+std::pair::operator =	myPair.h	/^    pair<char*, bool>& operator =(const pair<char*, bool> &p)$/;"	f	struct:std::pair	access:public	signature:(const pair<char*, bool> &p)
+std::pair::pair	myPair.h	/^    pair() : first(0), second(0) {}$/;"	f	struct:std::pair	access:public	signature:()
+std::pair::pair	myPair.h	/^    pair(const char *c, bool b = false) : second(b)$/;"	f	struct:std::pair	access:public	signature:(const char *c, bool b = false)
+std::pair::pair	myPair.h	/^    pair(const pair<char*, bool> &p) : second(p.second)$/;"	f	struct:std::pair	access:public	signature:(const pair<char*, bool> &p)
+std::pair::second	myPair.h	/^    bool second;$/;"	m	struct:std::pair	access:public
+std::pair::second_type	myPair.h	/^    typedef bool second_type;$/;"	t	struct:std::pair	access:public
+std::pair::setFirst	myPair.h	/^    void setFirst(const char *c)$/;"	f	struct:std::pair	access:public	signature:(const char *c)
+std::pair::setSecond	myPair.h	/^    void setSecond(bool b)$/;"	f	struct:std::pair	access:public	signature:(bool b)
+std::pair::std::swap	myPair.h	/^        std::swap(first, p.first);$/;"	p	class:std::pair::std	signature:(first, p.first)
+std::pair::std::swap	myPair.h	/^        std::swap(second, p.second);$/;"	p	class:std::pair::std	signature:(second, p.second)
+std::pair::swap	myPair.h	/^    void swap(pair<char*, bool> &p)$/;"	f	struct:std::pair	access:public	signature:(pair<char*, bool> &p)
+std::pair::temp	myPair.h	/^        char *temp = first;$/;"	l
+std::pair::temp	myPair.h	/^        pair<char*, bool> temp(p);$/;"	p	signature:(p)
+std::pair::~pair	myPair.h	/^    ~pair()$/;"	f	struct:std::pair	access:public	signature:()
+str	myConnection.cpp	/^        char str[INET6_ADDRSTRLEN];$/;"	l
+str	myConnection.cpp	/^        char str[INET_ADDRSTRLEN];$/;"	l
+str	myTextChat.cpp	/^    string str;$/;"	l
+sum	myTextChat.cpp	/^        long sum = accountBase + accountIncre;\/\/count the number of bits$/;"	l
+swap	myPair.h	/^        std::swap(first, p.first);$/;"	p	class:std::pair::std	signature:(first, p.first)
+swap	myPair.h	/^        std::swap(second, p.second);$/;"	p	class:std::pair::std	signature:(second, p.second)
+swap	myPair.h	/^    void swap(pair<char*, bool> &p)$/;"	f	struct:std::pair	access:public	signature:(pair<char*, bool> &p)
+t	myTextChat.cpp	/^    time_t t;$/;"	l
+tc	main.cpp	/^    myTextChat tc = *(tcpConnection*)connfd;$/;"	l
+tcpConnect	myConnection.cpp	/^tcpConnect::tcpConnect(const string &hostname, const string &servicename, bool passive)$/;"	f	class:tcpConnect	signature:(const string &hostname, const string &servicename, bool passive)
+tcpConnect	myConnection.h	/^    tcpConnect(const std::string &hostname, const std::string &servicename, bool passive);$/;"	p	class:tcpConnect	access:public	signature:(const std::string &hostname, const std::string &servicename, bool passive)
+tcpConnect	myConnection.h	/^class tcpConnect$/;"	c
+tcpConnect::close	myConnection.h	/^    void close(){ if(fd != -1) Close(fd), fd = -1;}$/;"	f	class:tcpConnect	access:public	signature:()
+tcpConnect::fd	myConnection.h	/^    int fd;$/;"	m	class:tcpConnect	access:private
+tcpConnect::fd	myConnection.h	/^    void close(){ if(fd != -1) Close(fd), fd = -1;}$/;"	l
+tcpConnect::getFd	myConnection.cpp	/^int tcpConnect::getFd() const$/;"	f	class:tcpConnect	signature:() const
+tcpConnect::getFd	myConnection.h	/^    int getFd() const;$/;"	p	class:tcpConnect	access:public	signature:() const
+tcpConnect::host	myConnection.h	/^    std::string host;$/;"	m	class:tcpConnect	access:private
+tcpConnect::myAccept	myConnection.cpp	/^tcpConnection tcpConnect::myAccept() const$/;"	f	class:tcpConnect	signature:() const
+tcpConnect::myAccept	myConnection.h	/^    tcpConnection myAccept() const;\/\/返回fd$/;"	p	class:tcpConnect	access:public	signature:() const
+tcpConnect::myConnect	myConnection.cpp	/^void tcpConnect::myConnect()$/;"	f	class:tcpConnect	signature:()
+tcpConnect::myConnect	myConnection.h	/^    void myConnect();$/;"	p	class:tcpConnect	access:private	signature:()
+tcpConnect::myListen	myConnection.cpp	/^void tcpConnect::myListen()$/;"	f	class:tcpConnect	signature:()
+tcpConnect::myListen	myConnection.h	/^    void myListen();$/;"	p	class:tcpConnect	access:private	signature:()
+tcpConnect::passive	myConnection.h	/^    bool passive;$/;"	m	class:tcpConnect	access:private
+tcpConnect::service	myConnection.h	/^    std::string service;$/;"	m	class:tcpConnect	access:private
+tcpConnect::tcpConnect	myConnection.cpp	/^tcpConnect::tcpConnect(const string &hostname, const string &servicename, bool passive)$/;"	f	class:tcpConnect	signature:(const string &hostname, const string &servicename, bool passive)
+tcpConnect::tcpConnect	myConnection.h	/^    tcpConnect(const std::string &hostname, const std::string &servicename, bool passive);$/;"	p	class:tcpConnect	access:public	signature:(const std::string &hostname, const std::string &servicename, bool passive)
+tcpConnection	myConnection.cpp	/^tcpConnection::tcpConnection(int fd) : fd(fd){}$/;"	f	class:tcpConnection	signature:(int fd)
+tcpConnection	myConnection.cpp	/^tcpConnection::tcpConnection(tcpConnect &c)$/;"	f	class:tcpConnection	signature:(tcpConnect &c)
+tcpConnection	myConnection.h	/^    tcpConnection(int fd = -1);$/;"	p	class:tcpConnection	access:public	signature:(int fd = -1)
+tcpConnection	myConnection.h	/^    tcpConnection(tcpConnect &c);\/\/根据fd得到相应的host和service$/;"	p	class:tcpConnection	access:public	signature:(tcpConnect &c)
+tcpConnection	myConnection.h	/^class tcpConnection$/;"	c
+tcpConnection::close	myConnection.h	/^    void close(){ if(fd != -1) Close(fd), fd = -1;}$/;"	f	class:tcpConnection	access:public	signature:()
+tcpConnection::fd	myConnection.h	/^    int fd;$/;"	m	class:tcpConnection	access:private
+tcpConnection::fd	myConnection.h	/^    void close(){ if(fd != -1) Close(fd), fd = -1;}$/;"	l
+tcpConnection::getFd	myConnection.h	/^    int getFd() const {return fd;}$/;"	f	class:tcpConnection	access:public	signature:() const
+tcpConnection::getLocal	myConnection.cpp	/^void tcpConnection::getLocal(string &host, string &service) const$/;"	f	class:tcpConnection	signature:(string &host, string &service) const
+tcpConnection::getLocal	myConnection.h	/^    void getLocal(std::string &host, std::string &service) const;$/;"	p	class:tcpConnection	access:public	signature:(std::string &host, std::string &service) const
+tcpConnection::getOther	myConnection.cpp	/^void tcpConnection::getOther(string &host, string &service) const$/;"	f	class:tcpConnection	signature:(string &host, string &service) const
+tcpConnection::getOther	myConnection.h	/^    void getOther(std::string &host, std::string &service) const;$/;"	p	class:tcpConnection	access:public	signature:(std::string &host, std::string &service) const
+tcpConnection::inum	myConnection.h	/^    char inum[5];$/;"	m	class:tcpConnection	access:private
+tcpConnection::myRecv	myConnection.cpp	/^int tcpConnection::myRecv(char *buff, size_t nbytes) const$/;"	f	class:tcpConnection	signature:(char *buff, size_t nbytes) const
+tcpConnection::myRecv	myConnection.h	/^    int myRecv(char *buff, size_t nbytes) const;$/;"	p	class:tcpConnection	access:public	signature:(char *buff, size_t nbytes) const
+tcpConnection::myRecvCmd	myConnection.cpp	/^int tcpConnection::myRecvCmd(char *buff, size_t nbytes) const$/;"	f	class:tcpConnection	signature:(char *buff, size_t nbytes) const
+tcpConnection::myRecvCmd	myConnection.h	/^    int myRecvCmd(char *buff, size_t nbytes) const;$/;"	p	class:tcpConnection	access:public	signature:(char *buff, size_t nbytes) const
+tcpConnection::mySend	myConnection.cpp	/^int tcpConnection::mySend(const char *buff, size_t nbytes) const$/;"	f	class:tcpConnection	signature:(const char *buff, size_t nbytes) const
+tcpConnection::mySend	myConnection.h	/^    int mySend(const char *buff, size_t nbytes) const;$/;"	p	class:tcpConnection	access:public	signature:(const char *buff, size_t nbytes) const
+tcpConnection::mySendCmd	myConnection.cpp	/^int tcpConnection::mySendCmd(const char *buff, size_t nbytes) const$/;"	f	class:tcpConnection	signature:(const char *buff, size_t nbytes) const
+tcpConnection::mySendCmd	myConnection.h	/^    int mySendCmd(const char *buff, size_t nbytes) const;$/;"	p	class:tcpConnection	access:public	signature:(const char *buff, size_t nbytes) const
+tcpConnection::setFd	myConnection.h	/^    void setFd(int f) {fd = f;}$/;"	f	class:tcpConnection	access:public	signature:(int f)
+tcpConnection::tcpConnection	myConnection.cpp	/^tcpConnection::tcpConnection(int fd) : fd(fd){}$/;"	f	class:tcpConnection	signature:(int fd)
+tcpConnection::tcpConnection	myConnection.cpp	/^tcpConnection::tcpConnection(tcpConnect &c)$/;"	f	class:tcpConnection	signature:(tcpConnect &c)
+tcpConnection::tcpConnection	myConnection.h	/^    tcpConnection(int fd = -1);$/;"	p	class:tcpConnection	access:public	signature:(int fd = -1)
+tcpConnection::tcpConnection	myConnection.h	/^    tcpConnection(tcpConnect &c);\/\/根据fd得到相应的host和service$/;"	p	class:tcpConnection	access:public	signature:(tcpConnect &c)
+temp	myPair.h	/^        char *temp = first;$/;"	l
+temp	myPair.h	/^        pair<char*, bool> temp(p);$/;"	p	signature:(p)
+tid	main.cpp	/^    pthread_t tid;$/;"	l
+tv	myTextChat.cpp	/^    struct timeval tv;$/;"	l
+user	myTextChat.cpp	/^void myTextChat::user()$/;"	f	class:myTextChat	signature:()
+user	myTextChat.h	/^    void user();$/;"	p	class:myTextChat	access:public	signature:()
+wchi	myTextChat.cpp	/^    int wchi = 0;$/;"	l
+work	main.cpp	/^    tc.work();$/;"	p	file:	signature:()
+work	main.cpp	/^    void *work(void*);$/;"	p	file:	signature:(void*)
+work	main.cpp	/^void *work(void *connfd)$/;"	f	signature:(void *connfd)
+work	myTextChat.cpp	/^void myTextChat::work()$/;"	f	class:myTextChat	signature:()
+work	myTextChat.h	/^    void work();$/;"	p	class:myTextChat	access:public	signature:()
+write	myTextChat.cpp	/^            out.write(ps, sizeof(ps));\/\/password$/;"	p	file:	signature:(ps, sizeof(ps))
+~myTextChat	myTextChat.cpp	/^myTextChat::~myTextChat()$/;"	f	class:myTextChat	signature:()
+~myTextChat	myTextChat.h	/^    ~myTextChat();$/;"	p	class:myTextChat	access:public	signature:()
+~pair	myPair.h	/^    ~pair()$/;"	f	struct:std::pair	access:public	signature:()
