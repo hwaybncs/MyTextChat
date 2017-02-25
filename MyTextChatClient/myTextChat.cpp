@@ -492,8 +492,8 @@ void myTextChat::changeUser()
             friGrp.clear();
             conn.myRecv(res, resNum);
             vector<string> strvec(split(res));
-            for(vector<string>::const_iterator it = strvec.begin(); it != strvec.end(); )
-                friGrp.insert(std::make_pair(*it++, *it++));
+            for(vector<string>::const_iterator it = strvec.begin(); it != strvec.end(); it += 2)
+                friGrp.insert(std::make_pair(*it, *(it+1)));
             break;
         }
         else if(opt == 'l' || opt == 'L')
