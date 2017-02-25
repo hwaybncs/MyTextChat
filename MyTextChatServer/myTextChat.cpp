@@ -7,7 +7,7 @@
 #include <sys/time.h>
 #include <errno.h>
 #include <pthread.h>
-#include "../myFuntion/myLib.h"
+#include "myLib.h"
 #include "myPair.h"
 #include "myTextChat.h"
 
